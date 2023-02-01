@@ -1,6 +1,6 @@
 {
   "name": "verb-nurbs",
-  "version": "2.1.0",
+  "version": "2.1.1-uform.1",
   "author": "pboyer <peter.b.boyer@gmail.com>",
   "description": "A CAD library for the web",
   "repository": {
@@ -10,7 +10,9 @@
   "scripts": {
     "test": "grunt -v mocha"
   },
-  "engine": "node 7.0.0",
+  "engines": {
+    "node": ">10.0.0"
+  },
   "main": "build/js/verb.js",
   "keywords": [
     "NURBS",
@@ -21,9 +23,6 @@
     "spline",
     "mesh"
   ],
-  "dependencies": {
-    "webworker-threads": "0.7.12"
-  },
   "devDependencies": {
     "benchmark": "1.0.0",
     "grunt": "0.4.5",
